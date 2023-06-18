@@ -14,7 +14,7 @@ const routes = [
     {
         path: '/feedback',
         name: 'feedback.index',
-        component: () => import('./components/Feedback/CreateComponent.vue'),
+        component: () => import('./components/Feedback/IndexComponent.vue'),
     },
 ];
 
