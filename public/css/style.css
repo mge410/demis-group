@@ -127,3 +127,27 @@ button:hover {
 .contact-table td:nth-child(2) {
     background-color: rgba(231, 228, 228, 0.7);
 }
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.news-tile {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+}
+.news-title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.news-text {
+    color: #333;
+}
+.news-date {
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
+}
