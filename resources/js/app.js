@@ -1,11 +1,14 @@
 import './bootstrap';
+import { createApp } from 'vue/dist/vue.esm-bundler'
+import Index from './components/Index.vue'
 
-import { createApp } from 'vue';
-import Example from './components/Example.vue'
+import router from './router.js'
+
 const app = createApp({
     components: {
-        Example,
+        Index,
     }
-})
+});
 
-app.mount(`#app`);
+app.use(router)
+app.mount("#app")
