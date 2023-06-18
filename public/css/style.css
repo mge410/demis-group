@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+nav ul li a:hover {
+    background-color: #ccc;
+}
+footer {
+    background-color: #ffe6e6;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.feedback_title {
+    text-align: center;
+    color: #333;
+}
+form {
+    margin-top: 20px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+input {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.error {
+    border-color: #ff0000;
+}
+.error-message {
+    color: #ff0000;
+    font-size: 12px;
+}
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #555;
+}
+
+.text-success{
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+.contact-table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.contact-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+.contact-table td:first-child {
+    background-color: #ffcccc;
+}
+.contact-table td:nth-child(2) {
+    background-color: rgba(231, 228, 228, 0.7);
+}

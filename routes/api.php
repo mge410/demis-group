@@ -14,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::group(['prefix' => 'feedback'], function (){
+    Route::post('/store', \App\Http\Controllers\Feedback\StoreController::class);
 });

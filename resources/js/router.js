@@ -1,24 +1,20 @@
 import {createRouter, createWebHistory} from 'vue-router';
 
-import HomeComponent from "./components/HomeComponent.vue";
-import NewsComponent from "./components/NewsComponent.vue";
-import FeedbackComponent from "./components/FeedbackComponent.vue";
-
 const routes = [
     {
         path: '/',
         name: 'home.index',
-        component: HomeComponent,
+        component: () => import('./components/HomeComponent.vue'),
     },
     {
         path: '/news',
         name: 'news.index',
-        component: NewsComponent,
+        component: () => import('./components/NewsComponent.vue'),
     },
     {
         path: '/feedback',
         name: 'feedback.index',
-        component: FeedbackComponent,
+        component: () => import('./components/Feedback/IndexComponent.vue'),
     },
 ];
 
