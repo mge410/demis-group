@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +12,10 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
+
+Route::group(['prefix' => 'news'], function (){
+    Route::get('/', \App\Http\Controllers\News\IndexController::class);
+});
 
 Route::group(['prefix' => 'feedback'], function (){
     Route::post('/store', \App\Http\Controllers\Feedback\StoreController::class);
