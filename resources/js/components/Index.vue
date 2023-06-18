@@ -1,8 +1,23 @@
 <template>
     <div>
-        <router-link :to="{ name: 'home.index'  }">Home</router-link>
-        <router-link :to="{ name: 'news.index'  }">News</router-link>
-        <router-link :to="{ name: 'feedback.index'  }">Feedback</router-link>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <router-link :to="{ name: 'home.index'  }">Home</router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{ name: 'news.index'  }">News</router-link>
+                    </li>
+                    <li>
+                        <router-link :to="{ name: 'feedback.index'  }">Feedback</router-link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <footer>
+            &copy; 2023 Все права защищены.
+        </footer>
         <router-view/>
     </div>
 </template>
