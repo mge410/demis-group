@@ -10,6 +10,12 @@ class IndexController extends Controller
 {
     public function __invoke()
     {
-        return NewsResource::collection(News::all());
+        return NewsResource::collection(
+            News::select(
+                'id',
+                'title',
+                'description',
+                'created_at')->get()
+        );
     }
 }
