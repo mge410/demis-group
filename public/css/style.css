@@ -3,6 +3,10 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
 }
+#app{
+    max-width: 1024px;
+    margin: 0 auto;
+}
 header {
     background-color: #f2f2f2;
     padding: 20px;
@@ -126,4 +130,35 @@ button:hover {
 }
 .contact-table td:nth-child(2) {
     background-color: rgba(231, 228, 228, 0.7);
+}
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+@media screen and (max-width: 980px) {
+    .news-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.news-tile {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+}
+.news-title {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.news-text {
+    color: #333;
+}
+.news-date {
+    color: #999;
+    font-size: 14px;
+    margin-top: 10px;
 }
