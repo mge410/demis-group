@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::group(['prefix' => 'home'], function (){
+    Route::get('/news', \App\Http\Controllers\Home\IndexController::class);
+});
+
 Route::group(['prefix' => 'news'], function (){
     Route::get('/', \App\Http\Controllers\News\IndexController::class);
 });
