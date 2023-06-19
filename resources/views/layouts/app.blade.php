@@ -15,5 +15,10 @@
     <div id="app">
         @yield('content')
     </div>
+    <footer>
+        <div>
+            &copy; 2023 Все права защищены.
+        </div>
+    </footer>
 </body>
 </html>
