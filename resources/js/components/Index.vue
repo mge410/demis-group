@@ -15,9 +15,6 @@
                 </ul>
             </nav>
         </header>
-        <footer>
-            &copy; 2023 Все права защищены.
-        </footer>
         <router-view/>
     </div>
 </template>
